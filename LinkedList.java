@@ -1,4 +1,4 @@
-package dataStuctures;
+package dataStructuresInJava;
 
 public class LinkedList<type> {
     private ListNode<type> head;
@@ -120,13 +120,15 @@ public class LinkedList<type> {
     }
 
     public ListNode<type> getAndRemoveHead() {
+        ListNode<type> temp = this.head;
         this.removeHead();
-        return this.head;
+        return temp;
     }
 
     public ListNode<type> getAndRemoveTail() {
+        ListNode<type> temp = this.tail;
         this.removeTail();
-        return this.tail;
+        return temp;
     }
 
     public void removeHead() {
