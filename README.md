@@ -6,7 +6,7 @@ graphs.
 # Plans for future Data Structures:
 - <s>Linked Lists</s>
 - <s>Queues</s>
-- Stacks
+- <s>Stacks</s>
 - General tree
 - Binary Search Trees
 - Red Black Trees
