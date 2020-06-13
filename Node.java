@@ -1,4 +1,4 @@
-package dataStuctures;
+package dataStructuresInJava;
 
 public class Node<Type> {
     private Type val;
