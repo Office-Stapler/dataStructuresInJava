@@ -4,7 +4,6 @@
 - <s>Linked Lists</s>
 - <s>Queues</s>
 - <s>Stacks</s>
-- General tree
 - Binary Search Trees
 - Red Black Trees
 - Splay trees
