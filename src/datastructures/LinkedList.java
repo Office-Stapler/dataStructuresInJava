@@ -35,7 +35,7 @@ public class LinkedList<type> {
      */
     private void insertNull(type val) {
         if (this.head == null) {
-            ListNode<type> insert = new ListNode(val);
+            ListNode<type> insert = new ListNode<type>(val);
             this.head = insert;
             this.tail = insert;
             return;
@@ -55,7 +55,7 @@ public class LinkedList<type> {
         ListNode<type> insert = new ListNode<type>(val);
         insert.setPrev(this.tail);
         this.tail.setNext(insert);
-        this.tail = this.tail.getNext();
+        tail = tail.getNext();
         this.length++;
     }
 
@@ -64,7 +64,7 @@ public class LinkedList<type> {
      */
 
     public void printList() {
-        ListNode curr = this.head;
+        ListNode<type> curr = this.head;
         while (curr != null) {
             System.out.println(curr.getVal());
             curr = curr.getNext();
@@ -117,7 +117,7 @@ public class LinkedList<type> {
      */
 
     public void insertAtHead(type value) {
-        ListNode<type> insert = new ListNode(value);
+        ListNode<type> insert = new ListNode<type>(value);
         if (this.head == null) {
             insertNull(value);
             return;
@@ -264,7 +264,7 @@ class ListNode<Type> extends Node<Type> {
      * Gets the current Node's next Node.
      * @return next the Node that comes after the current Node.
      */
-    public ListNode getNext() {
+    public ListNode<Type> getNext() {
         return this.next;
     }
 
@@ -272,7 +272,7 @@ class ListNode<Type> extends Node<Type> {
      * Gets the current Node's previous Node.
      * @return prev the Node that comes before the current Node.
      */
-    public ListNode getPrev() {
+    public ListNode<Type> getPrev() {
         return this.prev;
     }
 
